@@ -1,0 +1,103 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+  }
+
+  * {box-sizing: border-box;}
+
+  
+  .bg  {
+    /* The image used */
+    background-image: url("iceland.jpg"); 
+    height:100%;   
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+     
+  @media only screen and (max-width: 600px) {
+    .bg {
+      background-image: url("iceland.jpg");      
+    }
+  }
+   
+
+.container  {
+    /*show heigh: auto*/
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    
+}
+
+
+.btn {   
+  border: none; 
+  padding: 12px 24px ;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  margin: 14px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+        opacity: 1.8;
+    }   
+
+
+    .default {background-color: #d2d0d0; color: black;} /* Gray */ 
+    .default:hover {background: #aba9a9;}
+
+    .primary {background-color: #692ad5;} /* Purple */
+    .primary:hover {background-color: #4f298f;}
+    
+    .accent {background-color: #2196F3;} /* Blue */
+    .accent:hover {background: #0b7dda;}
+    
+    .danger {background-color: #ca2626;} /* Red */    
+    .danger:hover {background: #993a3a;}
+    
+    .large {background-color: #d2d0d0; color: black;} /* Gray */ 
+    .large:hover {background: #aba9a9;}
+
+    .small {background-color: #d2d0d0; color: black;} /* Gray */ 
+    .small:hover {background: #aba9a9;}
+
+    .pill {background-color: #d2d0d0; color: black;} /* Gray */ 
+    .pill:hover {background: #aba9a9;}
+
+    .custom {background-color: #692ad5; color: black;} /* Linear-gradient */ 
+    .custom:hover {background: #0b7dda;}
+
+.large{
+    padding: 12px 24px;
+    font-size: 36px;
+}
+
+.small {
+    padding: 12px 24px;
+    font-size: 12px;
+}
+
+.pill {
+    border-radius: 50px;
+}
+
+.custom {
+    padding: 12px 24px;
+    font-size: 16px;
+    background: linear-gradient(141deg, #692ad5 40%,  #0b7dda 75%);
+    color: white;
+}
+  
+    
+      
+  
