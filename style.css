@@ -96,8 +96,46 @@ body, html {
     font-size: 16px;
     background: linear-gradient(141deg, #692ad5 40%,  #0b7dda 75%);
     color: white;
+    transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
   
-    
-      
+ .custom span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.custom span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.custom:hover span {
+  padding-right: 25px;
+}
+
+.custom:hover span:after {
+  opacity: 1;
+  right: 0;
+}   
+ 
+
+/* Box 3 animation */
+@keyframes getBigger{
+  0% {transform: scale(1);}
+  50% {transform: scale(2);}
+  0% {transform: scale(.5);}
+}
+
+.custom {
+  animation: getBigger infinite 10s linear;
+  margin-left: 50px; 
+}
   
